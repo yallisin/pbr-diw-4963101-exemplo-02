@@ -11,6 +11,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        img {
+            width: 15rem;
+        }
+
         .cabecalho {
             border: 1px solid #285b82;
             height: 5rem;
@@ -23,6 +27,7 @@
 
         .container {
             display: flex;
+            margin-top: 1.5rem;
         }
 
         .item {
@@ -49,12 +54,56 @@
         }
 
         .menu-lateral {
-            border: 3px solid green;
             width: 15rem;
+            height: 30rem;
         }
 
         .parte-principal {
             border: 3px dashed blue;
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tile {
+            background-color: blue;
+            color: #f28500;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: .3rem;
+        }
+
+        .tile:hover {
+            background-color: #f28500;
+            color: blue;
+            font-size: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .cartao {
+            width: 15rem;
+            border: 1px solid #285b82;
+            height: 22rem;
+            box-shadow: .5rem .5rem .3rem .1rem #285b82;
+            margin: 1rem;
+        }
+
+        .descricao {
+            padding: 1rem;
+        }
+
+        .preco {
+            padding: 1rem;
+            font-weight: bolder;
+            text-align: right;
+        }
+
+        .cartao:hover {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -66,8 +115,39 @@
         <div class="item menu-sandwich">Menu</div>
     </div>
     <div class="container">
-        <nav class="menu-lateral">Menu Lateral</nav>
-        <main class="parte-principal">Parte Principal</main>
+        <nav class="menu-lateral">
+            <a href="https://www.pucminas.br">
+                <div class="tile">PUC Minas</div>
+            </a>
+            <a href="https://www.primevideo.com/-/pt/offers/nonprimehomepage/ref=dv_web_force_root?language=pt">
+                <div class="tile">Prime Video</div>
+            </a>
+            <a href="https://www.google.com.br/?hl=pt-BR">
+                <div class="tile">Google</div>
+            </a>
+            <a href="https://www.mcdonalds.com.br/">
+                <div class="tile">McDonalds</div>
+            </a>
+        </nav>
+        <main class="parte-principal">
+            <div class="cartao">
+                <div class="imagem"><img src="mcdonalds.png" alt="hamburger"></div>
+                <div class="descricao">Lorem, ipsum dolor sit amet consectetur adipicusantium atque sequi molestiae
+                    soluta,
+                    qui vitae tenetur sed ad earum repellat minima eius, beatae possimus!</div>
+                <div class="preco">R$ 30.00</div>
+                <div>
+                    <div class="cartao">
+                        <div class="imagem"><img src="mcdonalds.png" alt="hamburger"></div>
+                        <div class="descricao">Lorem, ipsum dolor sit amet consectetur adipicusantium atque sequi
+                            molestiae
+                            soluta,
+                            qui vitae tenetur sed ad earum repellat minima eius, beatae possimus!</div>
+                        <div class="preco">R$ 30.00</div>
+                        <div>
+
+
+        </main>
     </div>
 </body>
 
