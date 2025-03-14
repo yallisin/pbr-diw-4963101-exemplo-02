@@ -10,29 +10,49 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
         }
 
-        .container {
+        .cabecalho {
             border: 1px solid #285b82;
-            height: 30rem;
-            box-shadow: .5rem .5rem .3rem .1rem #285b82 ;
+            height: 5rem;
+            /*box-shadow: .5rem .5rem .3rem .1rem #285b82;*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: start;
+            
+            
         }
 
         .item {
-            background-color: red;
-            color: white;
+            background-color: #f28500;
+            color: #0d7aff;
             font-weight: bold;
             padding: 1rem;
-            margin: 1rem;
+            margin: .1rem;
             width: 5rem;
-            height: 5rem;
+            height: 3rem;
             border-radius: .5rem;
+        }
+
+        .logo {
+            flex-grow: 1;
+        }
+
+        .titulo {
+            flex-grow: 14;
+        }
+
+        .menu-sandwich {
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">Item 01</div>
-        <div class="item">Item 02</div>
-        <div class="item">Item 03</div>
+    <div class="cabecalho">
+        <div class="item logo">Logo</div>
+        <div class="item titulo">Título</div>
+        <div class="item menu-sandwich">Menu</div>
     </div>
+    <nav class="menu-lateral">Menu Lateral</nav>
+    <main>Parte Principal</main>
 </body>
 </html>
